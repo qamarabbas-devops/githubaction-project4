@@ -8,11 +8,11 @@ env:
 
 jobs:
   greeting_job:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu: latest
     env:
       Greeting: AOA
     steps:
-      - name: "Say AOA Azlan its Monday"
+      - name: "Say AOA Azlan it's Monday"
         run: echo "$Greeting $First_Name is using $cloud with project ${{ vars.PROJECT_ID}}!"
         env:
-          First_Name: Azlan Abbas 
+          First_Name: Azlan Abbas
